@@ -1,1 +1,73 @@
+/**
+ * Robots Manifesto Admin Styles
+ *
+ * Inspired by the film "Ad Astra"
+ * Plugin: Robots Manifesto
+ * Author: Drago Katić
+ */
 
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+#screen-meta-links {
+  margin-bottom: 16px;
+}
+
+/* Robots Manifesto */
+#robots-manifesto-section .rm-entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0.75rem 1rem;
+    border-radius: 0.25rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    line-height: 1.6;
+    width: 98.5%;
+    position: relative;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    margin: 4px;
+    background-color: #0d1321;
+    color: #ff911c;
+}
+
+/* Robots Manifesto Logo Image */
+.rm-logo-image {
+	width:24px;
+	height:auto;
+	filter: invert(53%) sepia(94%) saturate(1493%) hue-rotate(350deg) brightness(104%) contrast(101%);
+}
+
+/* Close button */
+.rm-close-btn {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    color: #ff911c;
+}
+
+/* Text line */
+.robots-manifesto-text-line {
+    padding: 8px 0px 16px 0px;
+	position: absolute;
+	margin: auto auto -16px 16px;
+}
+	
+@media screen and (max-width: 782px) {
+	#robots-manifesto-section .rm-entry {
+		margin: 4px 4px 4px -2px;
+	}
+	.robots-manifesto-text-line {
+		padding: 0px 0px 16px 0px;
+		position: relative;
+		margin: 0px auto -16px 16px;
+	}
+	.rm-logo-image {
+		margin-bottom: -8px;
+	}
+}
